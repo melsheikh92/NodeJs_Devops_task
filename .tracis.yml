@@ -1,4 +1,5 @@
 sudo: required
+language: generic 
 services:
     - docker
 
@@ -8,6 +9,6 @@ before_install:
 
 
 script:
-    - docker run myimage npm run test -- --coverage
+    - docker run -e CI=true myimage npm run test -- --coverage
 on: 
     master
