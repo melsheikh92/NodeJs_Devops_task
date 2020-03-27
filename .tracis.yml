@@ -3,9 +3,11 @@ services:
     - docker
 
 before_install:
+    - gem install bundler
     - docker build  -t myimage -f Dockerfile.dev .
 
 
 script:
     - docker run myimage npm run test -- --coverage
-    
+on: 
+    master
