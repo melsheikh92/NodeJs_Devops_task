@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - 8
 
-  sudo: required
+sudo: required
 
 services:
     - docker
@@ -12,5 +12,3 @@ before_install:
 
 script:
     - docker run -e CI=true myimage npm run test -- --coverage
-on: 
-    master
