@@ -12,5 +12,3 @@ before_install:
 
 script:
     - docker run -e CI=true myimage npm run test -- --coverage
-on: 
-    master
