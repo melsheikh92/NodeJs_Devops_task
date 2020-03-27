@@ -1,12 +1,10 @@
-language: generic 
+language: php 
 
 services:
     - docker
 
 before_install:
-    - gem install bundler
     - docker build  -t myimage -f Dockerfile.dev .
-
 
 script:
     - docker run -e CI=true myimage npm run test -- --coverage
