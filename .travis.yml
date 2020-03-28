@@ -17,7 +17,7 @@ deploy:
     provider: elasticbeanstak
     region: us-east-2
     app: react_-sample
-    env: "Docker-env"
+    env: "ReactSample-env"
     bucket_name: "elasticbeanstalk-us-east-2-333547288842"
     bucket_path: "react_-sample" 
     on:
