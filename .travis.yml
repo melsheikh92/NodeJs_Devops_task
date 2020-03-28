@@ -16,10 +16,10 @@ deploy:
     edge: true
     provider: elasticbeanstak
     region: us-east-2
-    app: ReactSample
+    app: react_-sample
     env: "Docker-env"
     bucket_name: "elasticbeanstalk-us-east-2-333547288842"
-    bucket_path: "ReactSample" 
+    bucket_path: "react_-sample" 
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
